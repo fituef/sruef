@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCKH - Nhóm Nghiên Cứu Khoa Học</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>NCKH</h1>
+                <p>Nhóm Nghiên Cứu Khoa Học</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#research">Nghiên cứu</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#team">Thành viên</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Khám Phá Tương Lai Qua Khoa Học</h1>
+            <p>Nhóm nghiên cứu hàng đầu tập trung vào các giải pháp công nghệ tiên tiến</p>
+            <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Tìm Hiểu Thêm</button>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Về Nhóm Nghiên Cứu</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Sứ Mệnh Của Chúng Tôi</h3>
+                    <p>
+                        Nhóm Nghiên Cứu Khoa Học (NCKH) được thành lập với mục đích thúc đẩy sự phát triển
+                        khoa học và công nghệ. Chúng tôi tập trung vào các lĩnh vực nghiên cứu tiên tiến
+                        nhằm giải quyết các thách thức của xã hội hiện đại.
+                    </p>
+                    <p>
+                        Với đội ngũ nhà khoa học, kỹ sư và nhà phát triển tài năng, chúng tôi cam kết
+                        mang lại những đóng góp có ý nghĩa cho cộng đồng khoa học quốc tế.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Nhà Khoa Học</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Dự Án</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">Công Bố</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Năm Hoạt Động</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-flask-vial"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Areas Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2>Lĩnh Vực Nghiên Cứu</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Trí Tuệ Nhân Tạo</h3>
+                    <p>Phát triển các thuật toán học máy và ứng dụng AI tiên tiến để giải quyết các bài toán phức tạp.</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Sinh Học Phân Tử</h3>
+                    <p>Nghiên cứu cấu trúc và chức năng của các phân tử sinh học để phát triển các liệu pháp mới.</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Năng Lượng Tái Tạo</h3>
+                    <p>Khám phá các công nghệ năng lượng xanh và bền vững cho tương lai.</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Công Nghệ Blockchain</h3>
+                    <p>Ứng dụng công nghệ blockchain trong các lĩnh vực an ninh thông tin và giao dịch kỹ thuật số.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Dự Án Nổi Bật</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-detail">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart AI Assistant</h3>
+                        <p class="project-category">Trí Tuệ Nhân Tạo</p>
+                        <p class="project-description">Phát triển trợ lý AI thông minh với khả năng học máy nâng cao.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2023</span>
+                            <span class="project-status">Hoàn Thành</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-detail">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gene Therapy Platform</h3>
+                        <p class="project-category">Sinh Học Phân Tử</p>
+                        <p class="project-description">Nền tảng liệu pháp gen hiện đại cho điều trị bệnh di truyền.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2023</span>
+                            <span class="project-status">Đang Phát Triển</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-detail">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Green Energy Grid</h3>
+                        <p class="project-category">Năng Lượng Tái Tạo</p>
+                        <p class="project-description">Hệ thống lưới năng lượng xanh thông minh cho các thành phố.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2022</span>
+                            <span class="project-status">Hoàn Thành</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-project="4">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-detail">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blockchain Finance</h3>
+                        <p class="project-category">Công Nghệ Blockchain</p>
+                        <p class="project-description">Giải pháp tài chính phi tập trung dựa trên blockchain.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2023</span>
+                            <span class="project-status">Hoàn Thành</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-project="5">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-detail">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quantum Computing Lab</h3>
+                        <p class="project-category">Vật Lý Lượng Tử</p>
+                        <p class="project-description">Phòng thí nghiệm máy tính lượng tử với các algos mới.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2023</span>
+                            <span class="project-status">Đang Phát Triển</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-project="6">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn-project-detail">Xem Chi Tiết</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Medical IoT System</h3>
+                        <p class="project-category">Công Nghệ IoT</p>
+                        <p class="project-description">Hệ thống IoT y tế giám sát sức khỏe bệnh nhân từ xa.</p>
+                        <div class="project-meta">
+                            <span class="project-year">2022</span>
+                            <span class="project-status">Hoàn Thành</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail Modal -->
+    <div id="projectModal" class="modal-project">
+        <div class="modal-overlay-project"></div>
+        <div class="modal-content-project">
+            <button class="modal-close-project">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body-project">
+                <div class="project-modal-left">
+                    <div class="project-modal-image">
+                        <div class="image-placeholder-project-lg">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-modal-info">
+                        <div class="info-row">
+                            <span class="info-label">Năm Khởi Động</span>
+                            <span class="info-value" id="modalProjectYear">2023</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Trạng Thái</span>
+                            <span class="info-value" id="modalProjectStatus">Hoàn Thành</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Ngân Sách</span>
+                            <span class="info-value" id="modalProjectBudget">$500,000</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Thành Viên</span>
+                            <span class="info-value" id="modalProjectTeam">5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-modal-right">
+                    <h2 id="modalProjectTitle"></h2>
+                    <p class="project-modal-category" id="modalProjectCategory"></p>
+
+                    <div class="modal-section-project">
+                        <h4><i class="fas fa-file-alt"></i> Mô Tả Dự Án</h4>
+                        <p id="modalProjectDesc"></p>
+                    </div>
+
+                    <div class="modal-section-project">
+                        <h4><i class="fas fa-bullseye"></i> Mục Tiêu</h4>
+                        <ul class="objectives-list" id="modalProjectObjectives"></ul>
+                    </div>
+
+                    <div class="modal-section-project">
+                        <h4><i class="fas fa-tools"></i> Công Nghệ Sử Dụng</h4>
+                        <div class="technologies-list" id="modalProjectTech"></div>
+                    </div>
+
+                    <div class="modal-section-project">
+                        <h4><i class="fas fa-stars"></i> Thành Tựu</h4>
+                        <ul class="achievements-list-project" id="modalProjectAchievements"></ul>
+                    </div>
+
+                    <div class="modal-section-project">
+                        <h4><i class="fas fa-users"></i> Thành Viên Dự Án</h4>
+                        <div class="team-members-list" id="modalProjectMembers"></div>
+                    </div>
+
+                    <div class="modal-action-buttons">
+                        <button class="btn btn-primary">Tìm Hiểu Thêm</button>
+                        <button class="btn btn-secondary">Liên Hệ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Các Thành Viên</h2>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card" data-member="1">
+                    <div class="card-glow"></div>
+                    <div class="member-image">
+                        <div class="image-placeholder-sm">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-badge">Giám Đốc</div>
+                    </div>
+                    <h3>Dr. Nguyễn Văn A</h3>
+                    <p class="position">Giám Đốc Nhóm - Chuyên Gia AI</p>
+                    <p class="description">Tiến sĩ MIT, 10+ năm kinh nghiệm trong AI và Machine Learning.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button class="btn-view-more">Xem Thêm</button>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card" data-member="2">
+                    <div class="card-glow"></div>
+                    <div class="member-image">
+                        <div class="image-placeholder-sm">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-badge">Nhà Nghiên Cứu</div>
+                    </div>
+                    <h3>TS. Trần Thị B</h3>
+                    <p class="position">Nhà Nghiên Cứu - Sinh Học Phân Tử</p>
+                    <p class="description">Tiến sĩ Cambridge, chuyên về công nghệ gen và liệu pháp nhân tạo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button class="btn-view-more">Xem Thêm</button>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card" data-member="3">
+                    <div class="card-glow"></div>
+                    <div class="member-image">
+                        <div class="image-placeholder-sm">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-badge">Chuyên Gia</div>
+                    </div>
+                    <h3>Dr. Lê Văn C</h3>
+                    <p class="position">Chuyên Gia - Năng Lượng Tái Tạo</p>
+                    <p class="description">Tiến sĩ Stanford, 8 năm kinh nghiệm về năng lượng sạch.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button class="btn-view-more">Xem Thêm</button>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card" data-member="4">
+                    <div class="card-glow"></div>
+                    <div class="member-image">
+                        <div class="image-placeholder-sm">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-badge">Phát Triển</div>
+                    </div>
+                    <h3>TS. Phạm Minh D</h3>
+                    <p class="position">Nhà Phát Triển - Blockchain</p>
+                    <p class="description">Tiến sĩ Berkeley, chuyên gia blockchain và cryptography.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button class="btn-view-more">Xem Thêm</button>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="team-card" data-member="5">
+                    <div class="card-glow"></div>
+                    <div class="member-image">
+                        <div class="image-placeholder-sm">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-badge">Nhà Khoa Học</div>
+                    </div>
+                    <h3>Dr. Hoàng Thị E</h3>
+                    <p class="position">Nhà Khoa Học - Vật Lý Lượng Tử</p>
+                    <p class="description">Tiến sĩ Oxford, 6 năm nghiên cứu về máy tính lượng tử.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button class="btn-view-more">Xem Thêm</button>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="team-card" data-member="6">
+                    <div class="card-glow"></div>
+                    <div class="member-image">
+                        <div class="image-placeholder-sm">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-badge">Quản Lý</div>
+                    </div>
+                    <h3>TS. Đặng Anh F</h3>
+                    <p class="position">Quản Lý Dự Án - Nghiên Cứu</p>
+                    <p class="description">Tiến sĩ MIT, 7 năm quản lý các dự án nghiên cứu lớn.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <button class="btn-view-more">Xem Thêm</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Team Members -->
+    <div id="memberModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-image">
+                        <div class="image-placeholder-lg">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="member-stats">
+                        <div class="stat-box">
+                            <span class="stat-value" id="modalPapers">35+</span>
+                            <span class="stat-desc">Công Bố</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value" id="modalProjects">20+</span>
+                            <span class="stat-desc">Dự Án</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value" id="modalAwards">8+</span>
+                            <span class="stat-desc">Giải Thưởng</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <h2 id="modalName"></h2>
+                    <p class="modal-position" id="modalPosition"></p>
+                    
+                    <div class="modal-section">
+                        <h4><i class="fas fa-user"></i> Giới Thiệu</h4>
+                        <p id="modalDescription"></p>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h4><i class="fas fa-star"></i> Chuyên Môn</h4>
+                        <div class="skills-list" id="modalSkills"></div>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h4><i class="fas fa-trophy"></i> Thành Tích</h4>
+                        <ul class="achievements-list" id="modalAchievements"></ul>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h4><i class="fas fa-envelope"></i> Liên Hệ</h4>
+                        <div class="modal-contact">
+                            <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+                            <p><strong>Website:</strong> <span id="modalWebsite"></span></p>
+                            <div class="social-links-modal">
+                                <a href="#" class="social-link-modal"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-link-modal"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link-modal"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Liên Hệ Với Chúng Tôi</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Địa Chỉ</h4>
+                            <p>123 Đường Khoa Học, Quận 1, TP. Hồ Chí Minh, Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Điện Thoại</h4>
+                            <p>+84 (0)28 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@nckh.vn</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Tên của bạn" required>
+                    <input type="email" placeholder="Email của bạn" required>
+                    <input type="text" placeholder="Chủ đề">
+                    <textarea placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Về NCKH</h4>
+                    <p>Nhóm nghiên cứu khoa học hàng đầu tập trung vào các giải pháp công nghệ tiên tiến.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Kết</h4>
+                    <ul>
+                        <li><a href="#home">Trang Chủ</a></li>
+                        <li><a href="#about">Giới Thiệu</a></li>
+                        <li><a href="#research">Nghiên Cứu</a></li>
+                        <li><a href="#projects">Dự Án</a></li>
+                        <li><a href="#team">Thành Viên</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Theo Dõi</h4>
+                    <div class="social-footer">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NCKH - Nhóm Nghiên Cứu Khoa Học. Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
